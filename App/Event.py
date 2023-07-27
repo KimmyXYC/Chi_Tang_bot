@@ -14,7 +14,7 @@ async def chi_tang(bot, query, fadian, name="池塘"):
         result.append(InlineQueryResultArticle(
             id=id_number+1,
             title='嘿嘿嘿~~~立即发癫',
-            description=f"{fadian_texts[id_number].format(name=name)[:30]}...",
+            description=f"{fadian_texts[id_number].format(name=name)[:50]}...",
             input_message_content=InputTextMessageContent(
                 message_text=fadian_texts[id_number].format(name=name)
             )
